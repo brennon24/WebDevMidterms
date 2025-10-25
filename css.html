@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to make a Website using CSS!</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7fafc;
+        }
+
+        h1 {
+            color: #2b6cb0;
+        }
+
+        h3 {
+            color: #2b6cb0;
+            font-style: italic;
+        }
+
+        p, ul {
+            color: #4a5568;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .image-container {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased text-gray-900">
+    <div class="container mx-auto p-6">
+
+        <section class="section">
+            <h1 class="text-4xl font-semibold mb-4">Introduction to CSS</h1>
+            <p class="text-lg mb-6">Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+        </section>
+
+        <section class="section">
+            <h3 class="text-2xl mb-4">Here is an example of what a basic CSS code structure will look like:</h3>
+            <div class="image-container">
+                <img src="CSScode.png" alt="basic CSS code" class="w-full h-auto">
+            </div>
+        </section>
+
+        <section class="section">
+            <h1 class="text-3xl mb-4">What is "The Cascade"?</h1>
+            <p>The cascade is the process CSS uses to decide which styles to apply when more than one rule targets the same element.</p>
+        </section>
+
+        <section class="section">
+            <h1 class="text-3xl mb-4">Concepts:</h1>
+            <p class="mb-4">Specificity in CSS determines which rule wins when multiple rules target the same element. Each type of selector has a point value. The more specific the selector, the higher its score.</p>
+        </section>
+
+        <section class="section">
+            <h1 class="text-3xl mb-4">CSS Syntax and its parts</h1>
+            <ul class="list-disc pl-6">
+                <li><strong>Selector</strong> - Specifies which HTML elements to style (p, .class, #id)</li>
+                <li><strong>Property</strong> - The aspect of the element you want to change (color, font-size)</li>
+                <li><strong>Value</strong> - The setting for the property (red, 16px, etc.)</li>
+                <li><strong>Declaration</strong> - A combination of property and value (color: red;)</li>
+                <li><strong>Declaration Block</strong> - One or more declarations wrapped in {}</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h1 class="text-3xl mb-4">Common Categories of CSS Properties</h1>
+            <ul class="list-disc pl-6">
+                <li><strong>Text Properties</strong> - Control the appearance, alignment, spacing, transformation, and decoration of text content in elements.</li>
+                <li><strong>Box Model Properties (Spacing & Size)</strong> - Define the space around elements and how their size is calculated, based on the CSS box model.</li>
+                <li><strong>Background Properties</strong> - Control the background layer of elements, including color, images, position, and repetition behavior.</li>
+                <li><strong>Layout & Display Properties</strong> - Control how elements are displayed and how they interact with other elements in the flow of the document.</li>
+                <li><strong>Flexbox Properties</strong> - Used with display: flex, these properties allow for flexible, responsive layouts.</li>
+                <li><strong>Animation & Transition Properties</strong> - Define motion and visual effects by animating changes in CSS properties.</li>
+                <li><strong>Visibility & Effects</strong> - Manage the visibility of elements and apply visual effects, such as transparency, shadows, and filters.</li>
+                <li><strong>Color</strong> - Specify a color (white, black, transparent, etc.)</li>
+                <li><strong>Display/Layout</strong> - block, inline, inline-block, flex, grid, none</li>
+                <li><strong>Positioning</strong> - static, relative, absolute, fixed, sticky</li>
+                <li><strong>Font/Style</strong> - bold, italic, normal, uppercase, lowercase, capitalize</li>
+                <li><strong>Units</strong> - px, em, rem, %, vh, vw, fr</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h1 class="text-3xl mb-4">Grid System</h1>
+            <p class="mb-4">A CSS Grid System is a layout method in CSS used to create web page layouts based on a grid. It allows for precise control over rows and columns, making complex designs much easier to implement and manage.</p>
+            <ul class="list-disc pl-6">
+                <li><strong>Grid Container</strong> - Contains one or more grid items arranged in columns and rows.</li>
+                <li><strong>Grid Items</strong> - A grid container that contains one or more grid items.</li>
+                <li><strong>Grid Lines</strong> - The dividing lines in a grid used to control layout.</li>
+                <li><strong>Grid Tracks</strong> - A row or column in the grid, formed by the space between two adjacent grid lines.</li>
+                <li><strong>Grid Cells</strong> - The smallest area in the grid layout — one "box" in the grid.</li>
+                <li><strong>Grid Area</strong> - The total space a grid item spans — across columns and rows.</li>
+                <li><strong>Grid Template</strong> - The structure/blueprint of the grid layout.</li>
+                <li><strong>Gap (Gutter)</strong> - The space between grid items.</li>
+                <li><strong>Nested Grids</strong> - Grid within a Grid.</li>
+                <li><strong>Media Queries (Responsive Design)</strong> - Grid systems often adapt to different screen sizes using media queries.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
