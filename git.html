@@ -1,22 +1,120 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>How to upload your Website!</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-      </head>
-      <body>
-        <h3>This is how to setup Git!</h3>
-     <ol>
-        <li>You first need to install Git</li>
-        <li>Make a Github account</li>
-        <li>Make a Github Repository</li>
-        <li>Generate a SSH Key</li>
-        <li>Register SSH Key to Github</li>
-        <li>Use Git commands such as git clone, git init, git add, git commit, git push and git pull</li>
-     </ol>
-     
+<html lang="en">
 
-      </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Upload Your Website to GitHub!</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7fafc;
+        }
+
+        h1 {
+            color: #2b6cb0;
+        }
+
+        h3 {
+            color: #2b6cb0;
+            font-style: italic;
+        }
+
+        p, ul {
+            color: #4a5568;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased text-gray-900">
+    <div class="container mx-auto p-6">
+
+        <section class="section">
+            <h1 class="text-4xl font-semibold mb-4">How to Upload Your Website to GitHub</h1>
+            <p class="text-lg mb-6">If you’ve built a website using HTML, CSS, or JavaScript, you can easily upload it to GitHub for free. This guide will walk you through the process step-by-step, even if you're a beginner.</p>
+        </section>
+
+        <section class="section">
+            <h3 class="text-2xl mb-4">Step 1: Install Git</h3>
+            <p class="mb-4">Download and install Git from <a href="https://git-scm.com/downloads" class="text-blue-500 underline">git-scm.com</a>. After installing, open your terminal or command prompt and type:</p>
+            <p><code>git --version</code></p>
+            <p>If it shows a version number, Git is successfully installed.</p>
+        </section>
+
+        <section class="section">
+            <h3 class="text-2xl mb-4">Step 2: Create a GitHub Account</h3>
+            <p>Go to <a href="https://github.com" class="text-blue-500 underline">github.com</a> and sign up for a free account.</p>
+        </section>
+
+        <section class="section">
+            <h3 class="text-2xl mb-4">Step 3: Create a New Repository</h3>
+            <ul class="list-disc pl-6">
+                <li>Log in to GitHub.</li>
+                <li>Click the <strong>“+”</strong> icon in the top-right corner and select <strong>“New repository.”</strong></li>
+                <li>Give your repository a name (e.g., <em>my-website</em>).</li>
+                <li>Choose <strong>Public</strong> and click <strong>Create repository.</strong></li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h3 class="text-2xl mb-4">Step 4: Open Your Website Folder</h3>
+            <p>Go to the folder on your computer where your website files are stored (like <code>index.html</code> and <code>style.css</code>).</p>
+        </section>
+
+        <section class="section">
+            <h3 class="text-2xl mb-4">Step 5: Initialize Git in Your Folder</h3>
+            <p>Right-click inside your project folder and select <strong>“Open in Terminal”</strong> or <strong>“Git Bash Here.”</strong></p>
+            <p>Then type the following commands one by one:</p>
+            <ul class="list-disc pl-6">
+                <li><code>git init</code> → Starts a new Git project.</li>
+                <li><code>git add .</code> → Adds all your website files to be tracked.</li>
+                <li><code>git commit -m "First commit"</code> → Saves your changes with a message.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h3 class="text-2xl mb-4">Step 6: Connect Your Folder to GitHub</h3>
+            <p>Go to your GitHub repository page and copy the HTTPS link. It looks like this:</p>
+            <p><code>https://github.com/yourusername/my-website.git</code></p>
+            <p>In your terminal, type:</p>
+            <ul class="list-disc pl-6">
+                <li><code>git remote add origin https://github.com/yourusername/my-website.git</code></li>
+                <li><code>git branch -M main</code></li>
+                <li><code>git push -u origin main</code></li>
+            </ul>
+            <p>This will upload your files to GitHub!</p>
+        </section>
+
+        <section class="section">
+            <h3 class="text-2xl mb-4">Step 7: View Your Website Files on GitHub</h3>
+            <p>Go back to your repository page and refresh. You should now see all your files uploaded online!</p>
+        </section>
+
+        <section class="section">
+            <h3 class="text-2xl mb-4">Step 8: Make Your Website Live (Optional)</h3>
+            <ul class="list-disc pl-6">
+                <li>Go to your repository’s <strong>Settings</strong> tab.</li>
+                <li>Scroll down to <strong>Pages</strong>.</li>
+                <li>Under “Source,” select <strong>main</strong> branch and click <strong>Save.</strong></li>
+                <li>After a few moments, GitHub will give you a link like <em>https://yourusername.github.io/my-website</em>.</li>
+            </ul>
+            <p>Your website is now live and accessible to anyone!</p>
+        </section>
+
+        <section class="section">
+            <h3 class="text-2xl mb-4">Congratulations!</h3>
+            <p>You’ve successfully uploaded your website to GitHub and learned the basics of using Git. 🎉</p>
+        </section>
+
+    </div>
+</body>
+
 </html>
